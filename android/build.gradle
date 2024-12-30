@@ -46,12 +46,12 @@ android {
     }
 }
 
-// // Set Kotlin JVM target
-// tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-//     kotlinOptions {
-//         jvmTarget = "18"
-//     }
-// }
+// Set Kotlin JVM target
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
